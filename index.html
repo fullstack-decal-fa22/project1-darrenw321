@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Darren Wu">
+        <meta name="description" content="Personal Website">
+        <title>Darren Wu's Personal Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+    <h1 id="title">Darren Wu</h1>
+    <div class="sections">
+        <h2>About me</h2>
+        <p>I'm Darren, a third-year student at UC Berkeley studying towards a Bachelor's degree in computer science!</p>
+        <p>I'm looking for software engineering internships for the summer of 2023. Feel free to look at some of the work I've done below!</p>
+
+        <h2>Work</h2>
+        <h3>Here are some projects that I've done!</h3>
+        <div class="projects-container">
+            <div class="project">
+                <h4>Gitlet</h4>
+                <p>Using Java, I implemented a version control system that emulates some basic features of Git, including commits, checkouts, logs, branches, and merges.</p>
+            </div>
+            <div class="project">
+                <h4>Numc</h4>
+                <p>Using C, I implemented a basic version of numpy (a Python library for array/matrix operations), including allocation/deallocation of matrix structs, and matrix operations such as addition, multiplication, and exponentiation. Used SIMD instructions and OpenMP to parallelize the matrix operations for optimization.</p>
+            </div>
+            <div class="project">
+                <h4>RookieDB</h4>
+                <p>Using Java, I implemented a database with B+ tree indices, efficient join algorithms, query optimization, multigranular locking for concurrent transactions, and database recovery.</p>
+            </div>
+        </div>
+
+        <h2>Contact</h2>
+        <h3>Here's where you can contact me:</h3>
+        <h4>Email:</h4>
+        <h5>dwu3@berkeley.edu</h5>
+        <h4>Phone:</h4>
+        <h5>(949) 257-5448</h5>
+        
+        <div class="contacts-container">
+            <div class="item-a"><h4>Social Media:</h4></div>
+            <div class="item-b"><h5>Twitter</h5></div>
+            <div class="item-c"><h6><a href="https://twitter.com/darrenw_321" target="_blank">https://twitter.com/darrenw_321</a></h6></div>
+            <div class="item-d"><h5>Instagram</h5></div>
+            <div class="item-e"><h6><a href="https://instagram.com/darrenwu321" target="_blank">https://instagram.com/darrenwu321</a></h6></div>
+        </div>
+
+        <h2>Leave your name and email!</h2>
+        <form class="message-form">
+            <label>Name:</label>
+            <input type="text" style="color: black;">
+            <br>
+            <br>
+            <label>Email:</label>
+            <input type="text" style="color: black;">
+            <br>
+            <br>
+            <input type="submit" style="color: black;">
+        </form>
+
+        <h2>Did you enjoy the website?</h2>
+        <button id="yes-button" style="color:black">Yes!</button>
+        <button id="no-button" style="color:black">No!</button>
+        <script> 
+            document.getElementById("yes-button").addEventListener("click", function (event) {
+                alert('Yay! :D');
+            });
+            document.getElementById("no-button").addEventListener("click", function (event) {
+                alert('Aww :(');
+            });
+        </script>
+    </div> 
+    </body>
+</html>

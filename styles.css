@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    font-family: Tahoma;
+    color: white;
+    margin: 10px;
+}
+
+body {
+    background-color: #003262;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-image: url('ucb.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-attachment: fixed;
+    background-position: right top;
+}
+
+#title {
+    color: #00B0DA;
+    text-align: left;
+    margin: 0px 10px 10px 10px;
+    font-size: 80px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project {
+    height: 200px;
+    width: 500px;
+    border-style: dashed;
+}
+
+.contacts-container {
+    display: grid;
+    background-color: #3B7EA1;
+    margin-left: 0px;
+    grid-template-areas: 
+        "header header"
+        "twitter twitter-handle"
+        "instagram insta-handle";
+}
+
+.contacts-container > div {
+    background-color: #003262;
+}
+
+.item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: twitter;
+}
+
+.item-c {
+    grid-area: twitter-handle;
+}
+
+.item-c:hover {
+    font-size: 120%;
+}
+
+.item-d {
+    grid-area: instagram;
+}
+
+.item-e {
+    grid-area: insta-handle;
+}
+
+.item-e:hover {
+    font-size: 120%;
+}
+
+h2 {
+    color: #C4820E;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3 {
+    color: lightblue;
+    font-size: 24px;
+}
+
+h4 {
+    color: #FDB515;
+}
+
+.message-form {
+    color: black;
+}
